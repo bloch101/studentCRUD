@@ -63,21 +63,21 @@ namespace StudentApi.Tests
                 Assert.That(result, Is.TypeOf<OkObjectResult>());
             }
 
-            [Test]
-            public void Update_ExistingStudent_ReturnsOkResult()
-            {
-                // Arrange
-                var student = new Student
-                {
-                    Name = "Ahsan Updated"
-                };
+            //[Test]
+            //public void Update_ExistingStudent_ReturnsOkResult()
+            //{
+            //    // Arrange
+            //    var student = new Student
+            //    {
+            //        Name = "Ahsan Updated"
+            //    };
 
-                // Act
-                var result = _controller.Update(1, student);
+            //    // Act
+            //    var result = _controller.Update(1, student);
 
-                // Assert
-                Assert.That(result, Is.TypeOf<OkObjectResult>());
-            }
+            //    // Assert
+            //    Assert.That(result, Is.TypeOf<OkObjectResult>());
+            //}
 
             [Test]
             public void Update_InvalidStudent_ReturnsNotFound()

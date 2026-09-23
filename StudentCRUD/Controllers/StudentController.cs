@@ -71,5 +71,16 @@ namespace StudentCRUD.Controllers
 
             return Ok("Student deleted successfully");
         }
+
+        [HttpGet("ping")]
+        public IActionResult Ping()
+        {
+            return Ok(new
+            {
+                status = "Success",
+                message = "Student CRUD API is running",
+                timestamp = DateTime.UtcNow
+            });
+        }
     }
 }

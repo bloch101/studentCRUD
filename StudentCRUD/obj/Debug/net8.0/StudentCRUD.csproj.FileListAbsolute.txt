@@ -71,3 +71,40 @@ C:\Users\ahsan.khan\source\repos\bloch101\studentCRUD\StudentCRUD\obj\Debug\net8
 C:\Users\ahsan.khan\source\repos\bloch101\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.pdb
 C:\Users\ahsan.khan\source\repos\bloch101\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.genruntimeconfig.cache
 C:\Users\ahsan.khan\source\repos\bloch101\studentCRUD\StudentCRUD\obj\Debug\net8.0\ref\StudentCRUD.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\appsettings.Development.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\appsettings.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.staticwebassets.endpoints.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.exe
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.deps.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.runtimeconfig.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\StudentCRUD.pdb
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.csproj.AssemblyReference.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.AssemblyInfoInputs.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.AssemblyInfo.cs
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.csproj.CoreCompileInputs.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.MvcApplicationPartsAssemblyInfo.cs
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.MvcApplicationPartsAssemblyInfo.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.sourcelink.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\scopedcss\bundle\StudentCRUD.styles.css
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\staticwebassets.build.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\staticwebassets.development.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\swae.build.ex.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentC.377918C3.Up2Date
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\refint\StudentCRUD.dll
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.pdb
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\StudentCRUD.genruntimeconfig.cache
+D:\Ahsan Data\Ahsan projects\studentCRUD\StudentCRUD\obj\Debug\net8.0\ref\StudentCRUD.dll

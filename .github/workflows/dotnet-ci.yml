@@ -10,7 +10,7 @@ on:
 jobs:
   build-test-deploy:
 
-    runs-on: [self-hosted, first]
+    runs-on: [self-hosted, label-1]
 
     steps:
 

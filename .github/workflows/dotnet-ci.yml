@@ -36,7 +36,7 @@ jobs:
       - name: Stop IIS App Pool
         shell: powershell
         run: |
-          & "$env:windir\system32\inetsrv\appcmd.exe" stop apppool "studentcrud"
+          & "$env:windir\system32\inetsrv\appcmd.exe" stop apppool "first"
       
       - name: Wait for IIS Worker Process
         shell: powershell
@@ -53,9 +53,9 @@ jobs:
           & "$env:windir\system32\inetsrv\appcmd.exe" start apppool "first"
           
       - name: Start IIS Website
-           shell: cmd
-           run: |
-             %windir%\system32\inetsrv\appcmd.exe start site "studentcrud"
+        shell: cmd
+        run: |
+          %windir%\system32\inetsrv\appcmd.exe start site "studentcrud"
 
       # 7. Deployment confirmation
       - name: Deployment Completed

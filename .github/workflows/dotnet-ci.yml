@@ -33,15 +33,29 @@ jobs:
         shell: cmd
         run: |
           %windir%\system32\inetsrv\appcmd.exe stop site "studentcrud"
-        
+      - name: Stop IIS App Pool
+        shell: powershell
+        run: |
+          & "$env:windir\system32\inetsrv\appcmd.exe" stop apppool "studentcrud"
+      
+      - name: Wait for IIS Worker Process
+        shell: powershell
+        run: |
+          Write-Host "Waiting for IIS worker process to exit..."
+          
       # 6. Publish application
       - name: Publish
         run: dotnet publish .\StudentCRUD\StudentCRUD.csproj --configuration Release --output C:\StudentCRUD-Deploy
 
-      - name: Start IIS Website
-        shell: cmd
+      - name: Start IIS App Pool
+        shell: powershell
         run: |
-          %windir%\system32\inetsrv\appcmd.exe start site "studentcrud"
+          & "$env:windir\system32\inetsrv\appcmd.exe" start apppool "first"
+          
+      - name: Start IIS Website
+           shell: cmd
+           run: |
+             %windir%\system32\inetsrv\appcmd.exe start site "studentcrud"
 
       # 7. Deployment confirmation
       - name: Deployment Completed

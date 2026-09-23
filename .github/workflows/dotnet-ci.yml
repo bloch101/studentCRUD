@@ -12,59 +12,91 @@ on:
 jobs:
   build-test:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
 
-      # 1. Checkout source code
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      # 2. Install .NET
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
-
-      # 3. Restore dependencies
-      - name: Restore
-        run: dotnet restore
-
-      # 4. Build project
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
-
-      # 5. Run NUnit tests + Code Coverage
-      - name: Test with Code Coverage
+      # 1. Go to your local project
+      - name: Go To Project Directory
+        shell: powershell
         run: |
-          dotnet test \
-            --no-build \
-            --configuration Release \
-            --collect:"XPlat Code Coverage" \
-            --results-directory ./TestResults
+          Set-Location "D:\jazzQR\first"
+          Write-Host "Current Directory:"
+          Get-Location
+
+      # 2. Check .NET
+      - name: Check .NET
+        shell: powershell
+        run: |
+          dotnet --info
+
+      # 3. Restore
+      - name: Restore
+        shell: powershell
+        run: |
+          Set-Location "D:\jazzQR\first"
+          dotnet restore
+
+      # 4. Build
+      - name: Build
+        shell: powershell
+        run: |
+          Set-Location "D:\jazzQR\first"
+          dotnet build --no-restore --configuration Release
+
+      # 5. NUnit Tests + Code Coverage
+      - name: Test With Code Coverage
+        shell: powershell
+        run: |
+          Set-Location "D:\jazzQR\first"
+
+          dotnet test `
+            --no-build `
+            --configuration Release `
+            --collect:"XPlat Code Coverage" `
+            --results-directory ".\TestResults"
 
       # 6. Install ReportGenerator
       - name: Install ReportGenerator
-        run: dotnet tool install -g dotnet-reportgenerator-globaltool
-
-      # 7. Generate HTML Coverage Report
-      - name: Generate Coverage Report
+        shell: powershell
         run: |
-          reportgenerator \
-            -reports:"./TestResults/**/coverage.cobertura.xml" \
-            -targetdir:"./CoverageReport" \
+          dotnet tool install -g dotnet-reportgenerator-globaltool
+
+      # 7. Generate HTML Coverage
+      - name: Generate Coverage Report
+        shell: powershell
+        run: |
+          Set-Location "D:\jazzQR\first"
+
+          $env:PATH += ";$env:USERPROFILE\.dotnet\tools"
+
+          reportgenerator `
+            -reports:".\TestResults\**\coverage.cobertura.xml" `
+            -targetdir:".\CoverageReport" `
             -reporttypes:"Html"
 
-      # 8. Upload Coverage Report
+      # 8. Show Coverage
+      - name: Check Coverage
+        shell: powershell
+        run: |
+          Set-Location "D:\jazzQR\first"
+
+          Write-Host "Coverage Files:"
+          Get-ChildItem ".\TestResults" -Recurse -Filter "coverage.cobertura.xml"
+
+          Write-Host "Coverage Report:"
+          Get-ChildItem ".\CoverageReport" -Recurse
+
+      # 9. Upload HTML Coverage
       - name: Upload Coverage Report
         uses: actions/upload-artifact@v4
         with:
-          name: code-coverage-report
-          path: CoverageReport
+          name: StudentCrud-Code-Coverage
+          path: D:\jazzQR\first\CoverageReport
 
-      # 9. Upload raw coverage file
+      # 10. Upload Coverage XML
       - name: Upload Coverage XML
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-xml
-          path: TestResults
+          name: StudentCrud-Coverage-XML
+          path: D:\jazzQR\first\TestResults

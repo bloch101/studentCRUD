@@ -29,10 +29,21 @@ jobs:
       # 5. Run tests
       # - name: Test
       #  run: dotnet test --configuration Release --no-build
-
+      - name: Stop IIS Website
+        run: |
+          Import-Module WebAdministration
+          Stop-Website -Name "studentcrud"
+        shell: powershell
+        
       # 6. Publish application
       - name: Publish
         run: dotnet publish .\StudentCRUD\StudentCRUD.csproj --configuration Release --output C:\StudentCRUD-Deploy
+
+      - name: Start IIS Website
+        run: |
+          Import-Module WebAdministration
+          Start-Website -Name "studentcrud"
+        shell: powershell
 
       # 7. Deployment confirmation
       - name: Deployment Completed
